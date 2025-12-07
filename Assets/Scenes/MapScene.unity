@@ -663,7 +663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b63ec1ebfa51545879594ec0f722eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
-  audioSource: {fileID: 1016421828}
   clip: {fileID: 8300000, guid: 0d33d751fde969f4b8218f0f7ecb3067, type: 3}
 --- !u!1 &1016421827
 GameObject:
@@ -937,14 +936,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 847402542}
         m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
+        m_MethodName: PlaySoundThenLoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AudioLibraryScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1087585282
@@ -1648,6 +1647,18 @@ MonoBehaviour:
           m_StringArgument: TeacherExerciseScene
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 847402542}
+        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
+        m_MethodName: PlaySoundThenLoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TeacherExerciseScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1811075023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,5 +1933,5 @@ SceneRoots:
   - {fileID: 1289159410}
   - {fileID: 274248165}
   - {fileID: 1016562331}
-  - {fileID: 847402541}
   - {fileID: 1016421829}
+  - {fileID: 847402541}
