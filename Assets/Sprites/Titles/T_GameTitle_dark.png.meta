@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 7ec197517dd1d144f940d262d4a9c6a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2794925647318881190
+    second: T_GameTitle_dark_0
+  - first:
+      213: -7948339298811191540
+    second: T_GameTitle_dark_1
+  - first:
+      213: 2956551059128767580
+    second: T_GameTitle_dark_2
+  - first:
+      213: -3660971294652039407
+    second: T_GameTitle_dark_3
+  - first:
+      213: -4067342321748689151
+    second: T_GameTitle_dark_4
+  - first:
+      213: 2684316975949962981
+    second: T_GameTitle_dark_5
+  - first:
+      213: -881996190748684522
+    second: T_GameTitle_dark_6
+  - first:
+      213: -4153441999127593930
+    second: T_GameTitle_dark_7
+  - first:
+      213: -7631439774473495262
+    second: T_GameTitle_dark_8
+  - first:
+      213: -5978771045882637411
+    second: T_GameTitle_dark_9
+  - first:
+      213: -8955970230419985548
+    second: T_GameTitle_dark_10
+  - first:
+      213: -9138181793251072873
+    second: T_GameTitle_dark_11
+  - first:
+      213: 5387837132041545643
+    second: T_GameTitle_dark_12
+  - first:
+      213: 668832806767657690
+    second: T_GameTitle_dark_13
+  - first:
+      213: -8529373977095446993
+    second: T_GameTitle_dark_14
+  - first:
+      213: -2016232378373456814
+    second: T_GameTitle_dark_15
+  - first:
+      213: -5022460674119460147
+    second: T_GameTitle_dark_16
+  - first:
+      213: 2290309941104602334
+    second: T_GameTitle_dark_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_GameTitle_dark_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 564
+        width: 188
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cede19eed6639d0800000000000000
+      internalID: -2794925647318881190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 473
+        width: 85
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fd4141583d1b190800000000000000
+      internalID: -7948339298811191540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 545
+        width: 103
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54dca71687c70920800000000000000
+      internalID: 2956551059128767580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_3
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 348
+        width: 128
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ffc51110e913dc0800000000000000
+      internalID: -3660971294652039407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_4
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 343
+        width: 125
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fb14445b5ed87c0800000000000000
+      internalID: -4067342321748689151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 347
+        width: 139
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee5c08411c904520800000000000000
+      internalID: 2684316975949962981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_6
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 347
+        width: 138
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f4d25332582c3f0800000000000000
+      internalID: -881996190748684522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_7
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 348
+        width: 128
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63cbfc6f1820c56c0800000000000000
+      internalID: -4153441999127593930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_8
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 346
+        width: 124
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d58bd45fda71690800000000000000
+      internalID: -7631439774473495262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_9
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 347
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9356c02963270da0800000000000000
+      internalID: -5978771045882637411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_10
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 55
+        width: 125
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47be7d4b68006b380800000000000000
+      internalID: -8955970230419985548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_11
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 53
+        width: 125
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794e3504318ae2180800000000000000
+      internalID: -9138181793251072873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_12
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 57
+        width: 122
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7eefa535175ca40800000000000000
+      internalID: 5387837132041545643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_13
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 56
+        width: 130
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad28385e4eb284900800000000000000
+      internalID: 668832806767657690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_14
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 57
+        width: 122
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ed3c2fe8391a980800000000000000
+      internalID: -8529373977095446993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_15
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 150
+        width: 120
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cb8669557e404e0800000000000000
+      internalID: -2016232378373456814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_16
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 93
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca9db480a2ac4ab0800000000000000
+      internalID: -5022460674119460147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_GameTitle_dark_17
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 138
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edce511c1c0d8cf10800000000000000
+      internalID: 2290309941104602334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      T_GameTitle_dark_0: -2794925647318881190
+      T_GameTitle_dark_1: -7948339298811191540
+      T_GameTitle_dark_10: -8955970230419985548
+      T_GameTitle_dark_11: -9138181793251072873
+      T_GameTitle_dark_12: 5387837132041545643
+      T_GameTitle_dark_13: 668832806767657690
+      T_GameTitle_dark_14: -8529373977095446993
+      T_GameTitle_dark_15: -2016232378373456814
+      T_GameTitle_dark_16: -5022460674119460147
+      T_GameTitle_dark_17: 2290309941104602334
+      T_GameTitle_dark_2: 2956551059128767580
+      T_GameTitle_dark_3: -3660971294652039407
+      T_GameTitle_dark_4: -4067342321748689151
+      T_GameTitle_dark_5: 2684316975949962981
+      T_GameTitle_dark_6: -881996190748684522
+      T_GameTitle_dark_7: -4153441999127593930
+      T_GameTitle_dark_8: -7631439774473495262
+      T_GameTitle_dark_9: -5978771045882637411
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
