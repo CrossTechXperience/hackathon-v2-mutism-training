@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +10,7 @@ public class UIButtonSound : MonoBehaviour
         StartCoroutine(PlayAndLoad(sceneName));
     }
 
-    private System.Collections.IEnumerator PlayAndLoad(string sceneName)
+    private IEnumerator PlayAndLoad(string sceneName)
     {
         // Create temporary audio object
         GameObject audioObj = new GameObject("TempAudio");
@@ -22,7 +23,7 @@ public class UIButtonSound : MonoBehaviour
         yield return new WaitForSeconds(clip.length);
 
         Destroy(audioObj);
-
-        SceneManager.LoadScene(sceneName);
+        if (!string.IsNullOrEmpty(sceneName))
+            SceneManager.LoadScene(sceneName);
     }
 }

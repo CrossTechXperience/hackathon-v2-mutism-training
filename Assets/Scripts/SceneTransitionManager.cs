@@ -14,7 +14,6 @@ public class SceneTransitionManager : MonoBehaviour
 
     private System.Collections.IEnumerator LoadSceneRoutine(string sceneName)
     {
-        // Optional animation trigger
         if (transitionAnimator != null)
         {
             transitionAnimator.SetTrigger("Start");

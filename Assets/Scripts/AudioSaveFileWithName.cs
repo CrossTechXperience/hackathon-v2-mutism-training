@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
@@ -68,6 +69,7 @@ public class AudioSaveFileWithName : AudioSaveFile
         // Save clip with the correct name
         string clipName = audioName.text.ToString().Trim();
         base.SaveClip(clip, clipName);
+        audioName.text = "";
         // Instantiate button 
         createButton(clipName);
         // Hide PopUp
@@ -79,10 +81,35 @@ public class AudioSaveFileWithName : AudioSaveFile
         GameObject newButton = Instantiate(playbackButtonPrefab, playbackButtonParent);
         newButton.GetComponentInChildren<TextMeshProUGUI>().text = clipName;
         // Add a callback to play the correct audio
-        var btn = newButton.GetComponentInChildren<Button>();
-        btn.onClick.AddListener(() =>
+        var btn = newButton.GetComponent<DualButtonUI>();
+        btn.PlayButton.onClick.AddListener(() =>
         {
-            audioPlayback.PlayAudio(clipName);
+            StartCoroutine(
+                audioPlayback.PlayAudio(clipName)
+            );
+            //audioPlayback.PlayAudio(clipName);
+        });
+
+        btn.DeleteButton.onClick.AddListener(() =>
+        {
+            string folderPath = Path.Combine(Application.persistentDataPath, _folderName);
+            string filePath = Path.Combine(folderPath, clipName.Trim() + ".wav");
+            if (!File.Exists(filePath))
+            {
+                Debug.LogWarning($"DeleteButton: File not found: {filePath}");
+                return;
+            }
+
+            try
+            {
+                File.Delete(filePath);
+                Debug.Log($"Deleted audio file: {filePath}");
+                Destroy(btn.gameObject);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to delete file: {e.Message}");
+            }
         });
     }
 }

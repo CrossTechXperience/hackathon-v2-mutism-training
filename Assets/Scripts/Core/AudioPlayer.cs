@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 public class AudioPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
-    private const bool deleteCachedFile = true;
+    private const bool deleteCachedFile = false;
 
     private void OnEnable()
     {

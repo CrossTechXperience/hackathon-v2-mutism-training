@@ -12,7 +12,8 @@ public class UIFeedback : MonoBehaviour
     public Sprite pressedSprite;    
 
     [Header("Text")]
-    public TextMeshProUGUI recordingText;          
+    public TextMeshProUGUI recordingText;
+    [SerializeField] GameObject instructionText;
 
     [Header("Recording Pulse")]
     public float pulseScale = 1.2f;           // Button scale when recording
@@ -48,6 +49,7 @@ public class UIFeedback : MonoBehaviour
 
     public void OnRecordingStart()
     {
+        instructionText.SetActive(false);
         Debug.Log("Recording started, showing text!");
         isRecording = true;
         if (micButtonImage != null && pressedSprite != null)
@@ -60,7 +62,7 @@ public class UIFeedback : MonoBehaviour
     public void OnRecordingStop()
     {
         isRecording = false;
-
+        instructionText.SetActive(true);
         if (micButtonImage != null)
             micButtonImage.transform.localScale = _originalScale;
 

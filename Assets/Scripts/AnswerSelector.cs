@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
@@ -10,11 +11,20 @@ public class AnswerSelector : MonoBehaviour
     [SerializeField] private Button leftArrow;
     [SerializeField] private Button playAudio;
     [SerializeField] private Button rightArrow;
-    [SerializeField] private TTSManager _ttsManager;
+    [SerializeField] private GameObject winningParticles;
+    // [SerializeField] private TTSManager _ttsManager;
+    [SerializeField] private TeacherAudioPlayback teacher;
     [SerializeField] private SceneTransitionManager sceneManager;
+    [SerializeField] public AudioSource audioSource;
+    [SerializeField] public AudioClip correctAnswerSound;
+
     private int _selectedAudio;
     private List<string> audioNames = new();
     private TextMeshProUGUI _playButtonLabel;
+
+    private static readonly HashSet<string> validAnswers =
+    new HashSet<string> { "yes", "no", "ja", "nee", "oui", "non" };
+
     void Start()
     {
         _selectedAudio = 0;
@@ -40,7 +50,12 @@ public class AnswerSelector : MonoBehaviour
         playAudio.onClick.AddListener(PlaySelectedAudio);
         leftArrow.onClick.AddListener(() => ChangeSelection(-1));
         rightArrow.onClick.AddListener(() => ChangeSelection(+1));
-        _ttsManager.SynthesizeAndPlay("Bonjour Clément.As - tu fini tes devoirs ?");
+        teacher.PlayDialogue(TeacherDialogue.Greeting);
+        teacher.PlayDialogue(TeacherDialogue.HomeworkQuestion);
+        //_ttsManager.SynthesizeAndPlay("As - tu fini tes devoirs?");
+        //_ttsManager.SynthesizeAndPlay("Bonjour Clèment");
+        //_ttsManager.SynthesizeAndPlay("C'est bien, mais parlons des devoirs.");
+        audioSource.clip = correctAnswerSound;
     }
 
     private void ChangeSelection(int delta)
@@ -60,13 +75,30 @@ public class AnswerSelector : MonoBehaviour
 
     private void PlaySelectedAudio()
     {
+        StartCoroutine(PlaySelectedAudioCoroutine());
+    }
+
+    private IEnumerator PlaySelectedAudioCoroutine()
+    {
         if (audioNames.Count == 0)
-            return;
-        audioPlayback.PlayAudio(audioNames[_selectedAudio]);
-        if (audioNames[_selectedAudio].ToLower() == "yes")
+            yield break;
+
+        // Wait for selected audio to finish
+        yield return StartCoroutine(
+            audioPlayback.PlayAudio(audioNames[_selectedAudio])
+        );
+
+        if (validAnswers.Contains(audioNames[_selectedAudio].ToLower()))
         {
-            // WIN
+            Instantiate(winningParticles, this.transform);
+            audioSource.Play();
+            yield return new WaitForSeconds(2f);
             sceneManager.LoadScene("RewardScene");
+        }
+        else
+        {
+            teacher.PlayDialogue(TeacherDialogue.IncorrectAnswerResponse);
+            teacher.PlayDialogue(TeacherDialogue.HomeworkQuestion);
         }
     }
 }
